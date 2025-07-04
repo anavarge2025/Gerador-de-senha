@@ -69,12 +69,12 @@ function geraSenha() {
     console.log(entropia);
     forcaSenha.classList.remove('fraca','media','forte');
 
-if (tamanhoSenha > 11){
+if (entropia > 11){
 forcaSenha.classList.add('forte');
 }
-else {
+else if(entropia > 35 && entropia < 57 ){
 forcaSenha.classList.add('media');
-}
+} else if (entropia <= 35) {
 
     forcaSenha.classList.add('forte');
 }
